@@ -8,9 +8,17 @@ import { Quotes } from '../quotes';
 })
 export class QuoteDetailComponent implements OnInit {
   @Input() quote :Quotes;
+  vote = 0;
+  down =0;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+  addUps(){
+    this.vote = this.vote + 1
+  }
+  addDowns(){
+    this.down = this.down +1
   }
 }

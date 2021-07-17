@@ -7,14 +7,17 @@ import { Quotes } from '../quotes';
 })
 export class ItemComponent implements OnInit {
   quotes:Quotes[]=[
-    new Quotes('Work Hard','Awadh','Siman')
+    new Quotes('Work Hard','Awadh','Siman', new Date(1988,12,12))
+    
   ]
+  vote: number = 0
   constructor() { }
 
   ngOnInit(): void {
   }
   toggleDetails(index){
     this.quotes[index].showDetails = !this.quotes[index].showDetails
-    console.log(this.quotes[index])
+    this.vote += this.vote;
+    
   }
 }

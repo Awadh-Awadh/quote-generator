@@ -1,4 +1,7 @@
 <p>Author:  <em>{{quote.author}}</em></p>
 <p>Editor:  {{quote.name}}</p>
 <small></small>
-<p><i class="fa fa-thumbs-up"></i></p>
+<p><i (click) ="addUps()" class="fas fa-thumbs-up"></i>  {{vote}}</p>
+ <p><i (click) ="addDowns()"class=" far fa-thumbs-down"></i>{{down}}
+</p>
+<small>created:{{quote.creationDate|date}}</small>
