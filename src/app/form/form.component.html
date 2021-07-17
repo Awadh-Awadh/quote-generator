@@ -2,12 +2,12 @@
 
 <div class="row pos">
   <div class="col-lg-12">
-    <form (submit)= "quoteAdd()" action="" #quoteForm = "ngForm">
+    <form (ngSubmit)= "submitQuote()"  #quoteForm = "ngForm">
       
         <label for="">Qoute</label>
         <div class="form-control">
       <textarea rows = "12" type="text" name =" quote" [(ngModel)]= "newQuote.quote" #quote = "ngModel"></textarea>
-      <div [hidden]="quote.valid || quote.pristine" >
+      <div [hidden]="quote.valid || quote.pristine" class ="alert alert-danger">
         <p>Field Cannot be empty</p>
 
       </div>
@@ -16,7 +16,7 @@
         <label for="">Author</label>
         <div class="form-control">
       <input class="form-control" #author ="ngModel" name= "author" [(ngModel)] = "newQuote.author">
-      <div [hidden]="author.valid || author.pristine" >
+      <div [hidden]="author.valid || author.pristine" class ="alert alert-danger" >
         <p>Field Cannot be empty</p>
         </div>
       </div>
@@ -24,7 +24,7 @@
         <label for="">Editor</label>
         <div class="form-control">
       <input class="form-control" #name ="ngModel" name= "name" [(ngModel)] = "newQuote.name">
-      <div [hidden]="name.valid || name.pristine" >
+      <div [hidden]="name.valid || name.pristine" class ="alert alert-danger">
         <p>Field Cannot be empty</p>
         </div>
       </div><br>
@@ -38,7 +38,7 @@
             </div>
       </div><br><br>
       <div class="form-group center">
-        <button type = "submit"class= "btn btn-lg">Create</button>
+        <button type ="submit" class= "btn btn-lg">Add</button>
       </div>
     </form>
   </div>

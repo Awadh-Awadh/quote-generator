@@ -24,7 +24,8 @@ export class ItemComponent implements OnInit {
   deleteGoal(index){
     this.quotes.splice(index,1)
   }
-  addnewGoal(){
-    
+  addNewGoal(quote){
+  quote.creationDate = new Date()
+  this.quotes.push(quote)
   }
 }
