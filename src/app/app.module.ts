@@ -7,6 +7,7 @@ import { HeroComponent } from './hero/hero.component';
 import { FormComponent } from './form/form.component';
 import { ItemComponent } from './item/item.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
     QuoteDetailComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
