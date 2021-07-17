@@ -1,1 +1,13 @@
 <app-logo></app-logo>
+<app-hero></app-hero>
+<div class="row details">
+  <div class="col-md-7">
+    <h2 style="text-align: center;">Qoutes</h2>
+      </div>
+      <div *ngFor = "let quote of quotes">
+        <h4>"{{quote.quote}}"</h4><br>
+        <button (click) = "toggleDetails() "class="btn btn-warning">Details</button>
+        <app-item>[]=""</app-item>
+      </div>
+
+</div>
