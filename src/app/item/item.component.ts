@@ -13,5 +13,8 @@ export class ItemComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  toggleDetails(index){
+    this.quotes[index].showDetails = !this.quotes[index].showDetails
+    console.log(this.quotes[index])
+  }
 }

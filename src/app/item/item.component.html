@@ -4,10 +4,10 @@
   <div class="col-md-7">
     <h2 style="text-align: center;">Qoutes</h2>
       </div>
-      <div *ngFor = "let quote of quotes">
+      <div *ngFor = "let quote of quotes let i = index">
         <h4>"{{quote.quote}}"</h4><br>
-        <button (click) = "toggleDetails() "class="btn btn-warning">Details</button>
-        <app-item>[]=""</app-item>
+        <button (click) = "toggleDetails(i) "class="btn btn-warning">Details</button>
+        <app-quote-detail [quote] = "quote"></app-quote-detail>
       </div>
 
 </div>
