@@ -11,14 +11,14 @@ export class ItemComponent implements OnInit {
     new Quotes ('Often companies which refactor old companies with new production rule','Ryan kriggs','lloyd Mwangi', new Date(2020,6,21))
     
   ]
-  vote: number = 0
+  // vote: number = 0
   constructor() { }
 
   ngOnInit(): void {
   }
   toggleDetails(index){
     this.quotes[index].showDetails = !this.quotes[index].showDetails
-    this.vote += this.vote;
+    // this.vote += this.vote;
     
   }
   deleteGoal(index){

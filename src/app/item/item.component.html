@@ -1,7 +1,7 @@
 <app-logo></app-logo>
 <app-hero></app-hero>
 <div class="row details">
-  <div class="col-md-7">
+  <div class="col-md-6">
     <h2 style="text-align: center;">Qoutes</h2>
       
       <div *ngFor = "let quote of quotes let i = index">
@@ -10,5 +10,7 @@
         <app-quote-detail *ngIf ="quote.showDetails" [quote] = "quote" (delete) = deleteGoal(i) ></app-quote-detail>
         </div><br><br>
         </div>
-
+<div class="col-md-6">
+  <app-form></app-form>
+</div>
 </div>
