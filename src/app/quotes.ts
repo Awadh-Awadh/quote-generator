@@ -8,6 +8,6 @@ export class Quotes {
    this.quote = quote
    this.author = author
    this.name = name;
-   this.showDetails = false
+   this.showDetails = true
  }
 }

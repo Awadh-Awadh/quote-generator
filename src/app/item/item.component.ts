@@ -20,4 +20,7 @@ export class ItemComponent implements OnInit {
     this.vote += this.vote;
     
   }
+  deleteGoal(index){
+    this.quotes.splice(index,1)
+  }
 }
