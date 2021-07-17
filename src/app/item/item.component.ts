@@ -24,4 +24,7 @@ export class ItemComponent implements OnInit {
   deleteGoal(index){
     this.quotes.splice(index,1)
   }
+  addnewGoal(){
+    
+  }
 }
