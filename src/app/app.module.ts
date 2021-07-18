@@ -8,6 +8,7 @@ import { FormComponent } from './form/form.component';
 import { ItemComponent } from './item/item.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { FormsModule } from '@angular/forms';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     HeroComponent,
     FormComponent,
     ItemComponent,
-    QuoteDetailComponent
+    QuoteDetailComponent,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,

@@ -18,12 +18,16 @@ input{
   border-radius:20px;
   padding: 20px 0;
   color: white;
-  background-color: transparent;
+  background-color: white;
+}
+input[type = "date"]{
+  background-color: white;
+  color:black
 }
 input:focus,input:hover{
   border:2px solid white !important;
-  color: white;
-  background-color: transparent;
+  color: black;
+  background-color: white;
 }
 textarea{
   background-color: black;
@@ -33,7 +37,8 @@ textarea{
   resize: none;
 }
 label{
-  font-size: 1rem
+  font-size: 1rem;
+  color: white;
 }
 .btn{
   background-color: #c95827 !important;
