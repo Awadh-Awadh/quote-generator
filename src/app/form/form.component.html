@@ -2,7 +2,7 @@
 
 <div class="row pos">
   <div class="col-lg-12">
-    <form (ngSubmit)= "submitQuote()"  #quoteForm = "ngForm">
+    <form (ngSubmit)= "submitQuote();quoteForm.resetForm({})"  #quoteForm = "ngForm">
       <div class="form-control">
         <label for="quote">Quote</label>
       <textarea rows = "12" type="text" id = "quote" name =" quote" [(ngModel)]= "newQuote.quote" #quote = "ngModel" required></textarea>

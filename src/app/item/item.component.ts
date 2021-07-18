@@ -8,7 +8,7 @@ import { Quotes } from '../quotes';
 export class ItemComponent implements OnInit {
   quotes:Quotes[]=[
     new Quotes('Snuggle with struggle.Its always rare to succeed in the first try','Will Sentanance','Siman', new Date(1988,12,12)),
-    new Quotes ('Often companies which refactor old companies with new production rule','Ryan kriggs','lloyd Mwangi', new Date(2020,6,21))
+    new Quotes('Often companies which refactor old companies with new production rule','Ryan kriggs','lloyd Mwangi', new Date(2020,6,21))
     
   ]
   // vote: number = 0
@@ -27,5 +27,6 @@ export class ItemComponent implements OnInit {
   addNewGoal(quote){
   quote.creationDate = new Date()
   this.quotes.push(quote)
+  console.log(this.quotes)
   }
 }

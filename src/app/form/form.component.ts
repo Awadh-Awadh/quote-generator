@@ -18,5 +18,6 @@ export class FormComponent implements OnInit {
 
 submitQuote(){
   this.add.emit(this.newQuote)
+  this.newQuote = new Quotes('','','',new Date())
 }
 }
